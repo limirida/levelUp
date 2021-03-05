@@ -1,0 +1,554 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin    : 0;
+    padding   : 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin : 0;
+    padding: 0;
+    color  : #fff;
+}
+
+input::placeholder {
+    outline: none;
+}
+
+button:hover,
+button:focus,
+button:active {
+    outline: none;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+input::placeholder {
+    outline: none;
+}
+
+img {
+    max-width : 100%;
+    max-height: 100%;
+}
+
+button {
+    outline: none;
+    border : none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        border : none;
+        outline: none;
+    }
+}
+
+
+body {
+    text-align : center;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-size  : 14px;
+
+    a {
+        text-decoration: none;
+        color          : #000;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+            color          : #000;
+            outline        : none;
+        }
+    }
+}
+
+ul {
+    padding   : 0;
+    margin    : 0;
+    list-style: none;
+}
+
+.countdown-title {
+    color      : #396;
+    font-weight: 100;
+    font-size  : 40px;
+    margin     : 40px 0px 20px;
+}
+
+.countdown {
+    font-family: sans-serif;
+    color      : #000;
+    display    : inline-block;
+    font-weight: 100;
+    text-align : center;
+    font-size  : 30px;
+}
+
+.countdown-item {
+    margin: 0 auto;
+}
+
+.countdown-number {
+    padding      : 20px 0;
+    border-radius: 3px;
+    display      : inline-block;
+}
+
+.countdown-time {
+    padding      : 15px 20px;
+    border-radius: 3px;
+    border       : 4px solid rgba(213, 77, 217, .5);
+    border-radius: 50%;
+    display      : inline-block;
+}
+
+.countdown-text {
+    display    : block;
+    padding-top: 5px;
+    font-size  : 16px;
+}
+
+.promo-information {
+    width   : 100%;
+    height  : 100%;
+    position: absolute;
+    right   : 0;
+    top     : 0;
+    width   : 100%;
+    left    : 0;
+
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.promo-information.container {
+    padding-top: 40px;
+    color      : #fff;
+    z-index    : 2;
+}
+
+.promo-information p {
+    font-size: 20px;
+}
+
+.promo-information li {
+    margin-bottom: 20px;
+}
+
+.promo-wrap {
+    padding-top: 40px;
+}
+
+.promo-wrap img {
+    max-width : 300px;
+    max-height: 400px;
+}
+
+.btn-order {
+    display            : block;
+    padding            : 15px 0;
+    border-radius      : 50px;
+    text-transform     : uppercase;
+    background         : #5C1D5E;
+    color              : #fff;
+    box-shadow         : 0 16px 32px 0 rgba(0, 40, 120, .35);
+    background         : rgb(2, 0, 36);
+    background         : linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 254, 0.40940126050420167) 100%);
+    background-position: 100% 0;
+    background-size    : 200% 200%;
+    transition         : .7s;
+}
+
+.btn-order:hover,
+.btn-order:focus,
+.btn-order:active {
+    box-shadow         : 0 10px 25px 0 rgba(0, 40, 120, .35);
+    background-position: 68% 0;
+
+    outline: none;
+}
+
+.composition-wrap {
+    padding-top: 80px;
+}
+
+.composition-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.composition-item img {
+    border-radius: 50%;
+}
+
+.product-wrap img {
+    height    : 300px;
+    margin-top: 30px;
+    position  : relative;
+}
+
+.product-wrap a {
+    margin-top: 30px;
+}
+
+.composition-item-1::before {
+    position  : absolute;
+    content   : "";
+    width     : 200px;
+    height    : 1px;
+    background: #000;
+    right     : -157px;
+    top       : 120px;
+    transform : rotate(25deg);
+}
+
+.composition-item-4::before {
+    position  : absolute;
+    content   : "";
+    width     : 200px;
+    height    : 1px;
+    background: #000;
+    left      : -157px;
+    top       : 120px;
+    transform : rotate(-25deg);
+}
+
+.composition-item-2::before {
+    position  : absolute;
+    content   : "";
+    width     : 200px;
+    height    : 1px;
+    background: #000;
+    right     : -150px;
+    top       : 60px;
+}
+
+.composition-item-5::before {
+    position  : absolute;
+    content   : "";
+    width     : 200px;
+    height    : 1px;
+    background: #000;
+    left      : -150px;
+    top       : 60px;
+}
+
+.composition-item-3::before {
+    position  : absolute;
+    content   : "";
+    width     : 200px;
+    height    : 1px;
+    background: #000;
+    right     : -160px;
+    top       : 0px;
+    transform : rotate(-20deg);
+}
+
+.composition-item-6::before {
+    position  : absolute;
+    content   : "";
+    width     : 200px;
+    height    : 1px;
+    background: #000;
+    left      : -160px;
+    top       : 0px;
+    transform : rotate(20deg);
+}
+
+.product-wrap .btn-order {
+    padding: 15px 0;
+}
+
+.composition {
+    padding-bottom: 80px;
+}
+
+.composition-wrap {
+    background: rgb(238, 174, 202);
+    background: linear-gradient(184deg, rgba(238, 174, 202, 1) 8%, rgba(148, 187, 233, 1) 99%);
+}
+
+.reviews {
+    padding   : 40px 0;
+    background: rgb(148, 187, 233);
+    background: linear-gradient(184deg, rgba(148, 187, 233, 1) 28%, rgba(238, 174, 202, 1) 78%);
+}
+
+.reviews img {
+    border-radius: 50%;
+}
+
+.reviews__item {
+    text-align      : center;
+    width           : 28%;
+    margin          : 0 20px;
+    border-radius   : 5px;
+    background-color: rgba(255, 255, 255, .2);
+    padding         : 35px 20px;
+    color           : #fff;
+
+    img {
+        margin: 0 auto;
+    }
+}
+
+.reviews__item-name {
+    padding-top: 20px;
+}
+
+.header-dots {
+    display        : flex;
+    justify-content: center;
+    margin-top     : 20px;
+}
+
+.header-dots button {
+    border-radius: 50%;
+    font-size    : 0;
+    height       : 10px;
+    width        : 10px;
+    margin       : 0 10px;
+    border       : none;
+    outline      : none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        border : none;
+        outline: none;
+    }
+}
+
+.header-dots .slick-active button {
+    border: 1px solid #94bbe9;
+}
+
+.reviews__item-name {
+    padding-bottom: 20px;
+}
+
+.reviews__item-text {
+    width : 80%;
+    margin: 0 auto;
+}
+
+.promo-info__wrap {
+    padding: 20px 0 80px;
+}
+
+.promo-info {
+    background: rgb(238, 174, 202);
+    background: linear-gradient(184deg, rgba(238, 174, 202, 1) 8%, rgba(148, 233, 206, 1) 56%);
+}
+
+.promo-info ul {
+    padding: 40px 0;
+}
+
+.order {
+    background: rgb(148, 233, 206);
+    background: linear-gradient(184deg, rgba(148, 233, 206, 1) 56%, rgba(213, 77, 217, 1) 96%);
+}
+
+.order-price {
+    font-weight    : normal;
+    font-size      : 20px;
+    text-decoration: line-through;
+}
+
+.price {
+    font-weight: bold;
+    font-size  : 25px;
+    padding-top: 40px;
+    position   : relative;
+    margin     : 0 auto;
+}
+
+.timer-wrap {
+    padding: 60px 0;
+}
+
+.form-wrap {
+    padding-bottom: 80px;
+
+    img {
+        max-height: 300px;
+    }
+}
+
+.form-wrap label {
+    margin-top: 20px;
+}
+
+.form-wrap input {
+    padding      : 10px 20px;
+    border-radius: 20px;
+    border       : none;
+    outline      : none;
+}
+
+.video {
+    position       : relative;
+    padding-bottom : 56.45%;
+    background     : url(../video/daisy-stock-poster.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.video-media {
+    width   : 100%;
+    height  : auto;
+    position: absolute;
+    top     : 0;
+    left    : 0;
+}
+
+.promo-intro {
+    max-height   : 100%;
+    // max-height: 100vh;
+    overflow     : hidden;
+    position     : relative;
+
+    &:after {
+        content         : '';
+        display         : block;
+        width           : 100%;
+        height          : 100%;
+        background-color: rgba(0, 0, 0, .7);
+        position        : absolute;
+        top             : 0;
+        left            : 0;
+        // z-index: 1;
+    }
+}
+
+.form-wrap input::placeholder {
+    color     : transparent;
+    transition: 0.5s;
+}
+
+.form-wrap input:focus::placeholder,
+.form-wrap input:active::placeholder {
+    color     : rgba(0, 0, 0, .5);
+    text-align: right;
+    font-size : 14px;
+    transform : translateY(-14px);
+}
+
+.form-wrap button {
+    margin: 40px 0;
+}
+
+.circle {
+    position         : absolute;
+    content          : '';
+    top              : 0;
+    right            : 0;
+    background       : #5C1D5E;
+    border-radius    : 100%;
+    width            : 80px;
+    height           : 80px;
+    -webkit-animation: pulsing 2s infinite;
+    animation        : pulsing 2s infinite;
+    color            : #fff;
+    padding-top      : 20px;
+}
+
+@-webkit-keyframes pulsing {
+    0% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform        : scale(0.5, 0.5)
+    }
+
+    50% {
+        -webkit-transform: scale(1.0, 1.0);
+        transform        : scale(1.0, 1.0);
+    }
+
+    100% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform        : scale(0.5, 0.5);
+    }
+}
+
+@keyframes pulsing {
+    0% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform        : scale(0.5, 0.5)
+    }
+
+    50% {
+        -webkit-transform: scale(1.0, 1.0);
+        transform        : scale(1.0, 1.0);
+    }
+
+    100% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform        : scale(0.5, 0.5);
+    }
+}
+
+.footer {
+    background: #5C1D5E;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color     : white;
+
+    a {
+        color: white;
+    }
+}
+
+.footer-wrap,
+.header-wrap {
+    padding: 40px 0;
+}
+
+.header {
+    background: #5C1D5E;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color     : white;
+
+    a {
+        color: white;
+    }
+}
+
+.header-wrap {
+    padding: 40px 0;
+}
+
+
+
+
+
+@supports (object-fit: cover) {
+    #video-bg>video {
+        top       : 0;
+        left      : 0;
+        width     : 100%;
+        height    : 100%;
+        object-fit: cover;
+    }
+}
+
+@import "media";
